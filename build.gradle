@@ -1,0 +1,32 @@
+group 'me.johntse.fastdfs'
+version '0.1.0'
+description = "a simple client for fastdfs, support connection pools"
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava.options.encoding = 'UTF-8'
+javadoc.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'org.slf4j:slf4j-log4j12:1.7.13'
+    compile 'org.apache.commons:commons-pool2:2.4.2'
+    testCompile 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes('Implemention-Title': project.name,
+                'Implemention-Version': project.version,
+                'Created-By': "John Tse",
+                'Implemention-Build': new Date(),
+                'Description': project.description)
+    }
+}

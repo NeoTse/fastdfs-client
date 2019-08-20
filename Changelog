@@ -1,0 +1,10 @@
+# Changelog
+fastDFS-client更新日志，格式遵循：https://keepachangelog.com/zh-CN/0.3.0
+
+## [0.1.0] - 2017-4-21
+### Added
+- 文件上传
+- 文件下载
+- 文件元数据设置
+- 文件元数据查看
+- 删除指定文件
